@@ -4,7 +4,7 @@
 #include <windows.h>
 #include <string>
 #include <iostream>
-#include <psapi.h>  // Для получения имени процесса по PID
+#include <psapi.h>
 
 using namespace std;
 
@@ -13,6 +13,7 @@ public:
     // Конструктор класса, инициализирует имя процесса
     WindowPinning(const std::string& processName);
 
+    // Конструктор класса, инициализирует pid процесса
     WindowPinning(DWORD pid);
     
     // Деструктор класса
